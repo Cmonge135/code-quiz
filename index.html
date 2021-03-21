@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Code Quiz</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <!-- This creates my two buttons -->
+    <div class=" clearfix">
+        <div id="highScores" class="top-left">
+            <button id="view-highscores" type="button" class="btn btn-secondary float-left">View highscores</button>
+        </div>
+        <button type="button" class="btn btn-secondary float-right">Time: <span id="timer"></span></button>
+    </div>
+  
+    <!-- This create the body of the quiz and the start button -->
+    <div class="start m-auto pt-5 text-center text-white">
+        <div>
+            <h1>Coding Quiz Challenge!</h1>
+            <br>
+            <p>Try to answer the folowing code realted questions within the time limit. Keep in mind 
+            <br> that incorrect answers will penalize your score time by ten seconds!
+            </p>
+            <button type="submit" class="btn btn-success">Start Quiz!</button>
+        </div>
+    </div>
+    
+    <!-- scores and user init -->
+    <div class="scoreContainer m-auto w-75">
+        <div id="initialsArray">
+            <div class="card">
+                <div class="card-header">All done!</div>
+                <div class="card-body">
+                    <p class="card-text">Your score is <span id="scoreNumber"></span>.</p>
+                    <form id="initials-form" method="POST">
+                        <label for="initials-text">Enter initials:</label>
+                        <input type="text" placeholder="" name="initials-text" id="initials-text" />
+                    </form>
+                    <button id="submit-initials" value="submit" class="btn btn-secondary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- questions -->
+    
+    <div class="quiz">
+        <div class="card m-auto w-75">
+            <div class="card-header">
+                <h2>Question</h2>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote">
+                    <ul></ul>
+                    <footer>
+                        <div class="feedback" style="padding-top:2%;"></div>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Highscores List and Local Storage -->
+    
+    <div class="highScorePage mt-0">
+        <div id="highscoresList">
+            <div class="card m-auto w-75">
+                <div class="card-header">
+                    <h3>Highscores</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <ol id="scoreList"></ol>
+                    </form>
+                    <button id="go-back" class="btn btn-secondary">Try again</button>
+                    <button id="clear" class="btn btn-secondary">Clear highscores</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <script src="questions.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+  
+</html>

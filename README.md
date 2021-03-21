@@ -26,11 +26,12 @@ THEN I can save my initials and my score
 ```
 
 
-## Screenshot
+## Screenshots
 
-The following image shows the web application's appearance and functionality:
+The following images show the web application's appearance and functionality:
 
-<img src="highscore.png">
+![](/images/quiz.png)
+![](/images/highscore.png)
 
 
 ## Links

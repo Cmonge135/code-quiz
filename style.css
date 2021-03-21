@@ -1,0 +1,50 @@
+html,
+body {
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: larger;
+  max-width: 100%;
+  height: auto;
+}
+
+.quiz,
+.scoreContainer,
+.highScorePage {
+  display: none;
+}
+
+.card {
+  margin-top: 7% !important;
+  background-color: white;
+}
+
+li:hover {
+  max-width: fit-content;
+  cursor: pointer;
+}
+
+.highScorePage {
+  margin-top: 0%;
+}
+
+footer{
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  color: lightgray;
+  text-align: center;
+  opacity: 0.2;
+}
+
+h1, p {
+  color:#000;
+}
+
+
+.btn-success {
+  color: #fff;
+  background-color: #002df8;
+  border-color: #198754;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color: #133efa;
+  border-color: #146c43;
+}
